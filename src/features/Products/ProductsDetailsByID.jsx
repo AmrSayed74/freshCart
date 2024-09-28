@@ -6,7 +6,7 @@ import ProductImgSwiper from "./ProductImgSwiper";
 import useSpecificProduct from "./useSpecificProduct";
 import RatingStar from "../../ui/RatingStar";
 import useAddToCart from "./../Cart/useAddToCart";
-import MiniSpinner from "./../../ui/MiniSpinner";
+import Spinner from "../../ui/Spinner";
 
 const ProductsDetailsByID = () => {
   const { product, isLoading } = useSpecificProduct();
@@ -18,7 +18,7 @@ const ProductsDetailsByID = () => {
 
   return (
     <div className="flex-column md:flex items-center justify-between p-5 gap-16 xl:gap-0 ">
-      {isLoading ? <MiniSpinner /> : <ProductImgSwiper product={product} />}
+      {isLoading ? <Spinner /> : <ProductImgSwiper product={product} />}
       <div className="flex-1 text-center md:text-start mt-10 md:mt-0 ">
         <h1 className="font-semibold mb-5 text-5xl">{title}</h1>
         <p>{description}</p>

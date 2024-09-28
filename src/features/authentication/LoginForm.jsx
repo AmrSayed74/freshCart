@@ -7,8 +7,7 @@ import useLogin from "./useLogin";
 import FormRow from "../../ui/FormRow";
 import Input from "../../ui/Input";
 import Form from "../../ui/Form";
-import MiniSpinner from "../../ui/miniSpinner";
-
+import Spinner from "../../ui/Spinner";
 
 const LoginForm = () => {
   const { handleSubmit, register, formState } = useForm();
@@ -78,7 +77,7 @@ const LoginForm = () => {
             disabled={isPending}
             className=" text-xl w-1/3 text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg  w-full sm:w-auto px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
           >
-            {isPending ? <MiniSpinner /> : "Login"}
+            {isPending ? <Spinner /> : "Login"}
           </Button>
           <span>
             Don't have an account?{" "}

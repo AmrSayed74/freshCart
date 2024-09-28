@@ -7,7 +7,7 @@ import Input from "../../ui/Input";
 
 import { Link } from "react-router-dom";
 import useVerifyCode from "./useVerifyCode";
-import MiniSpinner from "../../ui/miniSpinner";
+import Spinner from "../../ui/Spinner";
 
 const VerifyCodeForm = () => {
   const { verifyCode, isPending } = useVerifyCode();
@@ -53,7 +53,7 @@ const VerifyCodeForm = () => {
             type="submit"
             className="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-xl w-full sm:w-auto px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
           >
-            {isPending ? <MiniSpinner /> : "Verify"}
+            {isPending ? <Spinner /> : "Verify"}
           </Button>
           <div>
             <Link
