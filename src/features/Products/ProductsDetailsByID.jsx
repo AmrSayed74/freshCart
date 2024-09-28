@@ -5,8 +5,8 @@ import { formatCurrency } from "../../utils/helpers";
 import ProductImgSwiper from "./ProductImgSwiper";
 import useSpecificProduct from "./useSpecificProduct";
 import RatingStar from "../../ui/RatingStar";
-import MiniSpinner from "../../ui/miniSpinner";
 import useAddToCart from "./../Cart/useAddToCart";
+import MiniSpinner from "./../../ui/MiniSpinner";
 
 const ProductsDetailsByID = () => {
   const { product, isLoading } = useSpecificProduct();
