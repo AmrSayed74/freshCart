@@ -1,5 +1,3 @@
-"use client";
-
 import CategoriesCarousel from "./CategoriesCarousel";
 import HomeCarousel from "./HomeCarousel";
 import HomeProducts from "./HomeProducts";
