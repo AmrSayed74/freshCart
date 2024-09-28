@@ -4,12 +4,12 @@ import Footer from "./Footer";
 
 const AppLayout = () => {
   return (
-    <div className="grid h-screen grid-rows-[auto_1fr_auto]">
+    <div>
       <Header />
-      <main className=" mx-auto max-w-4xl mt-[9rem]">
+      <main className="container mx-auto w-[90%] mt-[120px]">
         <Outlet />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

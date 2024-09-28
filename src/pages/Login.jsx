@@ -1,9 +1,7 @@
-const Login = () => {
-  return (
-    <div>
-      Login
-    </div>
-  )
-}
+import LoginForm from "../features/authentication/LoginForm";
 
-export default Login
+const Login = () => {
+  return <LoginForm />;
+};
+
+export default Login;

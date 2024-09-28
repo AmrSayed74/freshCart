@@ -1,5 +1,7 @@
+import CartItems from "../features/Cart/CartItems";
+
 const Cart = () => {
-  return <div>Cart</div>;
+  return <CartItems />;
 };
 
 export default Cart;

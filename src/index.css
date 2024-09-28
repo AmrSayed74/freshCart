@@ -1,9 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "flowbite";
+
 :root {
-  --color-green: #4fa74f;
+  --color-green-100: ##dcfce7;
+  --color-green-200: #bbf7d0;
+  --color-green-300: #86efac;
+  --color-green-400: #4ade80;
+  --color-green-500: #22c55e;
+  --color-green-600: #16a34a;
+  --color-green-700: #15803d;
+  --color-green-800: #166534;
+  --color-green-900: #14532d;
 }
 
 *,
@@ -21,10 +29,56 @@ html {
 }
 body {
   font-family: "Poppins", sans-serif;
-  transition: color 0.2s;
-  min-height: 100vh;
+  transition: all 0.2s;
+  /* min-height: 100vh; */
   line-height: 1.5;
   font-size: 1.6rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* svg {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: var(--color-green-600);
+  &:hover {
+    fill: var(--color-green-600);
+  }
+}
+.favorite {
+  fill: var(--color-green-600);
+  animation: fav .3s linear alternate-reverse;
+}
+
+@keyframes fav {
+  0% {
+    transform: translateY(0);
+    opacity: 10%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    transform: translateY(2px);
+    opacity: 100%;
+  }
+} */
+
+.active {
+  color: var(--color-green-500);
 }
 
 .loader {
@@ -51,21 +105,23 @@ body {
   }
 }
 
-.active {
-  color: var(--color-green);
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px dotted #fff;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
+  display: flex;
 }
 
-img {
-  max-width: 100%;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-  hyphens: auto;
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
